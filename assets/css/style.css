@@ -708,3 +708,90 @@ img {
         margin-bottom: var(--mb-6);
     }
 }
+
+@media screen and (max-width: 350px) {
+    :root {
+        --big-font-size: 1rem;
+        --bigger-font-size: 1.25rem;
+        --biggest-font-size: 1.5rem;
+        --normal-font-size: .875rem;
+        --smaller-font-size: .75rem;
+    }
+
+    .section__title {
+        font-size: var(--big-font-size);
+        margin-bottom: var(--mb-3);
+    }
+
+    .nav__menu {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav__item {
+        margin-bottom: var(--mb-3);
+    }
+
+    .home__title {
+        font-size: var(--bigger-font-size);
+        margin-bottom: var(--mb-1);
+    }
+
+    .newsletter__container {
+        padding: 2rem;
+    }
+
+    .newsletter__title {
+        font-size: var(--big-font-size);
+        margin-bottom: var(--mb-1);
+    }
+
+    .newsletter__subscribe {
+        width: 100%;
+    }
+
+    .button {
+        padding: 0.75rem 1.5rem; /* Adjust padding for smaller screens */
+        font-size: 0.875rem; /* Decrease font size for better readability */
+    }
+
+    .button__light {
+        font-size: 0.875rem; /* Decrease font size for better readability */
+    }
+
+    .button-icon {
+        font-size: 1rem; /* Decrease icon size for better proportion */
+    }
+
+    .collection__container {
+        justify-content: flex-start; /* Align items to the start */
+        row-gap: 1rem; /* Decrease gap between rows for better spacing */
+    }
+
+    .collection__card {
+        height: auto; /* Allow card height to adjust based on content */
+        flex-direction: column; /* Stack elements vertically */
+        padding: 1rem; /* Decrease padding for better spacing */
+    }
+
+    .collection__img {
+        position: static; /* Remove absolute positioning */
+        margin-bottom: 1rem; /* Add margin to bottom for better spacing */
+        width: 100%; /* Make image width full for better fit */
+        height: auto; /* Allow image height to adjust based on width */
+    }
+
+    .collection__data {
+        align-self: auto; /* Reset alignment */
+    }
+
+    .collection__name {
+        font-size: var(--big-font-size); /* Adjust font size for better readability */
+        margin-bottom: .5rem; /* Increase margin bottom for better spacing */
+    }
+
+    .collection__description {
+        margin-bottom: 0; /* Reset margin bottom */
+    }
+}
+
